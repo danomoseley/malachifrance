@@ -245,7 +245,7 @@ $(document).ready(function(){
 		$("<h1>").html("Who Won The Baby Pool!?"),
 		$("<div>").html("Alice and Justin!").css("font-family","Ballw").css("font-size","6em").css("color","#003E50").css("margin-top","1em"),
 		$("<div>").html("They guessed that<br/>Malachi would be born on:").css("font-family","BPreplay").css("color","#1E260F").css("font-size","4em"),
-		$("<div>").html("March 28th, 2011<br/> 8.5lbs · 21 inches").css("font-family","BPreplay").css("color","#397387").css("font-size","4em"),
+		$("<div>").html("March 28th, 2011<br/> 8.5lbs &bull; 21 inches").css("font-family","BPreplay").css("color","#397387").css("font-size","4em"),
 		poolNav,
 		$("<div>").addClass("footer"),
 		$("<img>").addClass("stork2").attr("src","img/stork2.png")
@@ -285,7 +285,7 @@ $(document).ready(function(){
 	
 	
 	$("body").css("font-size",.011*document.body.clientHeight + "pt");
-	$("#main .content .container").html("<span style='font-family:Ballw;font-size:7em;color:#493D09;'>It's A Boy!</span><hr style='margin-top:2%;margin-bottom:2%;'/><span style='line-height: 2em;font-family:BPreplay;font-size:3em;color:#706339;'>Malachi France was born on <br/>March 28th, 2011 at 11:20pm</span><hr style='margin-top:2%;margin-bottom:2%;'/><span style='font-family:BPreplay;font-size:3em;color:#045157;'>9lbs 5.4oz · 21 inches</span>");
+	$("#main .content .container").html("<span style='font-family:Ballw;font-size:7em;color:#493D09;'>It's A Boy!</span><hr style='margin-top:2%;margin-bottom:2%;'/><span style='line-height: 2em;font-family:BPreplay;font-size:3em;color:#706339;'>Malachi France was born on <br/>March 28th, 2011 at 11:20pm</span><hr style='margin-top:2%;margin-bottom:2%;'/><span style='font-family:BPreplay;font-size:3em;color:#045157;'>9lbs 5.4oz &bull; 21 inches</span>");
 	
 	$("#main .content").css("margin-top",(document.body.clientHeight-parseInt($("#main .content").height()))/2+"px");
 	$("#pool .content").css("margin-top",(document.body.clientHeight-parseInt($("#pool .content").height()))/2+"px");	
