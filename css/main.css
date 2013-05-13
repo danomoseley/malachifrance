@@ -1,0 +1,543 @@
+@font-face { 
+	font-family: BPreplay;
+	src: url(../fonts/BPreplay.eot?) format("eot"),
+		 url('../fonts/BPreplay.otf') format("opentype"); 
+} 
+@font-face { 
+	font-family: Ballw; 	
+	src: url(../fonts/BALLW___.eot?) format("eot"),
+		 url(../fonts/BALLW___.TTF) format("opentype");
+	
+	} 
+
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;	
+	font-size: 6pt;
+}
+
+.footer{
+	clear:both;
+}
+
+body.starry{
+	background-image: url(../img/stars.gif);
+}
+
+body.daytime{
+	background-color:#b4dcdc;
+}
+
+body.raining{
+	background-image: url(../img/rain.gif);
+}
+
+#mainContainer{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+#scroller{
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+#wizard{
+	height:100%;
+	width:400%;
+	position:relative;
+	margin-left: -100%;
+	z-index:3;
+}
+
+h1{
+	font-family: BPreplay, sans-serif;
+	text-transform:uppercase;
+	color:#51A8BC;
+}
+
+#wizardGallery{
+}
+
+#sky{
+	position: relative;
+	z-index:1;
+}
+
+#footer{
+	position:absolute;
+	bottom:0;
+	z-index:1000;
+	font-size:.7em;
+	text-align: center;
+	width: 100%;
+}
+
+#footer a{
+	color:black;
+	text-decoration:none;
+}
+
+.screen{
+	width:25%;
+	height:100%;
+	float:left;
+	position:relative;
+	
+}
+
+.screen > .content {
+	margin-top: 12.5%;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	z-index:3;
+	position: relative;
+}
+
+.screen > .content > .container{
+	text-align:center;
+	background-image: url(../img/Plaque.png);
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.poolNav{
+	margin-top:75px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#photos > .content{
+	width: 61em;
+	margin-top:5%;
+}
+
+#pool > .content{
+	width: 61em;
+	margin-top:5%;
+	text-align:center;
+	line-height: 6.5em;
+}
+
+.content.gallery{
+	padding:0px;
+	text-align:center;
+	background-image:none;
+	position:relative;
+}
+
+
+.floatLeft{
+	float:left;
+}
+
+.gallery{
+}
+
+.scrollNav{
+	width:50px;
+	height:100%;
+}
+
+#scrollLeft{
+	margin-right:-50px;
+}
+
+#scrollRight{
+	margin-left:-50px;
+}
+
+.cloud{
+    background-repeat: no-repeat;
+    background-position: center center;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-transition:all 5.0s ease-in-out;
+	-moz-transition:all 5.0s ease-in-out;
+	-o-transition:all 5.0s ease-in-out;
+	-transition:all 5.0s ease-in-out;
+}
+
+.cloud.big{
+    background-image: url(../img/cloud2.png);
+	width:167px;
+	height:124px;
+}
+
+.cloud.little{
+    background-image: url(../img/cloud1.png);
+	width:340px;
+	height:206px;
+}
+
+#photos .image img{
+	height:100%;
+}
+
+.image{
+	float:left;
+	text-align:center;
+}
+
+.frames{
+	z-index:2;
+	height: 90%;
+	position:relative;
+	width:100%;
+}
+
+
+.back{
+	width:100%;
+	height:100%;
+	-webkit-background-size: 100% 100%;
+	position:absolute;
+}
+
+#leftFrame{
+	z-index:1;
+	left: 19px;
+	top:40px;
+	position:absolute;
+	width:59%;
+	height:75%;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	opacity: 0.7;
+}
+
+.frame > .back{
+}
+
+.frame .image{
+	background-color:white;
+	height: 100%;
+	width: 100%;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	overflow: hidden;
+	border:1em solid white;
+	border-bottom:3em solid white;
+	-moz-box-shadow: 0px 3px 4px #819F9F;
+	-webkit-box-shadow: 0px 3px 4px #819F9F;
+	box-shadow: 0px 3px 4px #819F9F;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.image > img{
+	border-radius: 13px;
+}
+
+#centerFrame{
+	left:13%;
+	position:absolute;
+	
+	width:75%;
+	height:99%;
+	z-index:3;
+}
+
+#rightFrame{	
+	z-index:2;
+	right: 19px;
+	top:40px;
+	position:absolute;
+	width:75%;
+	height:75%;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	transform: rotate(3deg);
+	opacity: 0.7;
+}
+.frame .image{
+	position:absolute;	
+}
+
+.frame{
+	height: 49.1em;
+	position: relative;
+}
+
+.galleryNav{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+}
+
+.frame .photo:first-child{
+	z-index:3;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.photo{
+	margin-left: auto;
+	margin-right: auto;
+	position:absolute;
+	background-color:white;
+	height: 99%;
+	width: 99%;
+	margin: 4px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	overflow: hidden;
+	-moz-box-shadow: 0px 3px 4px #819F9F;
+	-webkit-box-shadow: 0px 3px 4px #819F9F;
+	box-shadow: 0px 3px 4px #819F9F;
+}
+
+.photo .title{
+	position: absolute;
+	bottom: -.5em;
+	width: 100%;
+	font-size: 2em;
+	color: #3B351D;
+	background-color:white;
+	padding:5px;
+}
+
+.frame .photo:nth-child(2){
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	z-index:1;
+	left:-20px;
+}
+.frame .photo:nth-child(3){
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	transform: rotate(3deg);
+	z-index:1;
+	right:-20px;
+}
+
+.frame .photo:nth-child(2) .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.4;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+}
+
+.frame .photo:nth-child(3) .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.4;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+}
+
+
+
+ul li{
+	float:left;
+	list-style-type: none;
+}
+
+
+
+.navButton{
+	background-repeat: no-repeat;
+    background-position: center center;
+	float:left;
+	z-index: 1000;
+	position: relative;
+	width: 29em;
+	height: 7.5em;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+}
+
+.nav > .navButton:first-child{
+	float:left;
+}
+
+.nav > .navButton:nth-child(2){
+	float:right;
+}
+
+.backHome-lt{
+	/*background-image: url(../img/home-lt.png);*/
+}
+
+.backHome-rt{
+	/*background-image: url(../img/home-rt.png);*/
+}
+
+.babyPool-rt{
+	/*background-image: url(../img/pool-rt.png);*/
+}
+
+.babyPool-lt{
+	/*background-image: url(../img/pool-lt.png);*/
+}
+
+.photos-rt{
+	/*background-image: url(../img/photos-rt.png);*/
+}
+
+.photos-lt{
+	/*background-image: url(../img/photos-lt.png);*/
+}
+
+.leftArrow{
+	/*background-image: url(../img/LeftArrow.png);*/
+	width: 7em;
+	height: 12.8em;
+	background-repeat: no-repeat;
+    background-position: center center;
+	position:absolute;
+	top:24em;
+	left: -11em;
+	z-index:10;
+}
+
+.rightArrow{
+	/*background-image: url(../img/RightArrow.png);*/
+	width: 7em;
+	height: 12.8em;
+	background-repeat: no-repeat;
+    background-position: center center;
+	position:absolute;
+	top:24em;
+	right: -11em;
+	z-index:10;
+}
+
+.car{
+	position:absolute;
+	height: 8em;
+	width: 15em;
+	/*background-image: url(../img/Car.png);*/
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	right: -11em;
+	top: 36em;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.stork{
+	z-index:1000;
+	position:absolute;
+	height: 17em;
+	width: 36em;
+	/*background-image: url(../img/Stork.png);*/
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	right: -29em;
+	top: 0%;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.stork2{
+	z-index:4;
+	position:absolute;
+	height: 27em;
+	width: 63em;
+	/*background-image: url(../img/Stork2.png);*/
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	left: -19em;
+	top: 29em;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.container{
+	position:relative;
+	z-index:3;
+	padding: 60px;
+}
+
+.plane{
+	z-index:1;
+	position:absolute;
+	height: 14em;
+	width: 22em;
+	/*background-image: url(../img/Plane.png);*/
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	top: -6em;
+	left: -17em;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.boat{
+	z-index:0;
+	position:absolute;
+	height: 14em;
+	width: 27.3em;
+	/*background-image: url(../img/Boat.png);*/
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	top: 4em;
+	left: -28em;
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.towTruck{
+	z-index:0;
+	position:absolute;
+	height: 14em;
+	width: 27.75em;
+	/*background-image: url(../img/TowTruck.png);*/
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	top: 38em;
+	right: -26em;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#main .content{
+	width:61em;
+}
+
+#photos .content{
+}
+
+.mainNav{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	width: 60em;
+}
